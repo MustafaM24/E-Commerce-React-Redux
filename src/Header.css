@@ -1,0 +1,32 @@
+/* Header.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+  
+  .cart-icon {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart-counter {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    padding: 2px 6px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+  }
+  

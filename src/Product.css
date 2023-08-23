@@ -1,0 +1,21 @@
+/* src/Product.css */
+.product {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.price {
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.add-to-cart {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
