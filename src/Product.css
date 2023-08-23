@@ -19,3 +19,7 @@
   padding: 5px 10px;
   cursor: pointer;
 }
+
+.add-to-cart:hover {
+  background-color: #0056b3;
+}

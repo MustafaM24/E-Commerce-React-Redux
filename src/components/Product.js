@@ -1,7 +1,7 @@
 // src/Product.js
 import React from "react";
 import { connect } from "react-redux";
-import addToCart from "../redux/actions";
+import {addToCart} from "../redux/actions";
 import "../Product.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons"; // Import the icon you want to use

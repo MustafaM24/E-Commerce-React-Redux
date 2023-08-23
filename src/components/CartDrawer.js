@@ -5,6 +5,10 @@ import "../CartDrawer.css"; // Add your styles
 import { connect } from "react-redux";
 
 const CartDrawer = ({ isOpen, onClose, cartItems }) => {
+  const totalPrice = cartItems.reduce(
+    (total, item) => total + item.price * item.quantity,
+    0
+  );
 
   return (
   <div className={`cart-drawer ${isOpen ? "open" : ""}`}>
@@ -20,7 +24,7 @@ const CartDrawer = ({ isOpen, onClose, cartItems }) => {
       ))}
     </div>
     <div className="cart-total">
-      Total: ${cartItems.reduce((total, item) => total + item.price, 0)}
+        Total: ${totalPrice.toFixed(2)}
     </div>
   </div>
   )

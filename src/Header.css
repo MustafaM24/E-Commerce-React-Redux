@@ -18,6 +18,10 @@
     display: flex;
     align-items: center;
   }
+
+  .cart-icon:hover {
+    color: #ccc;
+  }
   
   .cart-counter {
     background-color: red;

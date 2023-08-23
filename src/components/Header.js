@@ -6,13 +6,15 @@ import "../Header.css"; // Import your header styles
 import { connect } from "react-redux";
 
 const Header = ({  openCartDrawer, cartItems }) => {
+  const cartCount = cartItems.reduce((total, item) => total + item.quantity, 0);
+
 
   return (
     <header className="header">
       <h1>E-Commerce Store</h1>
       <div className="cart-icon" onClick={openCartDrawer}>
         <FontAwesomeIcon icon={faShoppingCart} />
-        <span className="cart-counter">{cartItems.length}</span>
+        <span className="cart-counter">{cartCount}</span>
       </div>
     </header>
   )

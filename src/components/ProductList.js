@@ -2,7 +2,7 @@
 import React from "react";
 import { connect } from "react-redux";  // Import connect
 import Product from "./Product";
-import  addToCart from "../redux/actions";  // Import the addToCart action
+import { addToCart } from "../redux/actions";  // Import the addToCart action
 import products from "./data";
 
 const ProductList = ({ addToCart }) => {
